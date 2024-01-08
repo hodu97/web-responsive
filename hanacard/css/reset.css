@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 여백초기화 */
+body,div,ul,li,dl,dt,dd,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form{margin: 0;padding: 0;}
+
+/* a태그 초기화 */
+
+a{color: #273743;text-decoration: none;}
+
+/* 폰트초기화 */
+
+body,input,textarea,select,button,table{
+    font-family:'Noto Sans KR','나눔고딕',"Nanum Gothic",'Malgun Gothic','맑은고딕','돋움',Dotum, sans-serif;
+    font-size: 12px;
+}
+
+/* 폰트스타일 초기화 */
+em,address{font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,ol,li{list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6{
+    font-size: 12px; 
+    font-weight: normal;
+}
+
+/* 테두리 초기화 */
+fieldset{border: 0;/* border: none; */}
+
+/* 버튼 초기화 */
+button{border: 0;}
+
+/* 폰트굵기 초기화 */
+strong{font-weight: normal;}
+
+
+/* ir효과 - 웹접근성 */
+.ir{position: absolute;
+    overflow: hidden;
+    width: 0;height: 0;text-indent: -99999em;
+}
+
+.clearfix::after{content:"";clear: both;display: block;}
+

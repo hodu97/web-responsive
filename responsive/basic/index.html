@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #F8F0E5;
+            color: #0F2C59;
+        }
+
+        h1::before {
+            content: "1, ";
+        }
+
+        h1::after {
+            content: "- 기본";
+        }
+
+        /* 화면의 너비가 0-1280px : 데스크탑 */
+
+        @media (max-width:1280px) {
+            body {
+                background-color: #EADBC8;
+            }
+
+            h1::before {
+                content: "2, ";
+            }
+
+            h1::after {
+                content: "- 1025px-1280px";
+            }
+
+        }
+
+        /* 화면의 너비가 0-1024px : 노트북 */
+
+        @media (max-width:1024px) {
+            body {
+                background-color: #DAC0A3;
+            }
+
+            h1::before {
+                content: "3, ";
+            }
+
+            h1::after {
+                content: "- 961px-1024px";
+            }
+
+        }
+
+        /* 화면의 너비가 0-960px : 노트북 */
+
+        @media (max-width:960px) {
+            body {
+                background-color: rgb(185, 160, 131);
+            }
+
+            h1::before {
+                content: "4, ";
+            }
+
+            h1::after {
+                content: "- 769px-960px";
+            }
+
+        }
+
+        /* 화면의 너비가 0-768px : 테블릿 */
+
+        @media (max-width:768px) {
+            body {
+                background-color: rgb(139, 119, 95);
+            }
+
+            h1::before {
+                content: "5, ";
+            }
+
+            h1::after {
+                content: "- 577px-768px";
+            }
+
+        }
+
+        /* 화면의 너비가 0-576px : 모바일 */
+
+        @media (max-width:576px) {
+            body {
+                background-color: rgb(116, 101, 84);
+                color: #fff;
+            }
+
+            h1::before {
+                content: "6, ";
+            }
+
+            h1::after {
+                content: "- 0px-576px";
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1>🍁미디어 쿼리 (MediaQuery)🍁</h1>
+    <p>미디어 쿼리는 화면 크기에 따른 각각의 속성값을 지정하여 , 여러가지 화면을 구성하는 기술이다.</p>
+    <p> @media only and (조건문){실행문}</p>
+    <ul>
+        <li>@media: 미디어쿼리가 시작됨을 표시합니다.</li>
+        <li>only: 미디어쿼리 구문을 해석하라는 명령어입니다.(생략가능)</li>
+        <li>all: 미디어쿼리를 해석해야할 대상을 나타냅니다.(생략가능)<br>
+            <ul>
+                <li>all: 모든 미디어 유형에서 사용할 css를 정의합니다.</li>
+                <li>print: 인쇄장치에서 사용할 css를 정의합니다.</li>
+                <li>screen: 컴퓨터 스크린에서 사용할 css를 정의합니다.</li>
+                <li>aural: 화면을 읽어 소리로 출력해 주는 장치에서 사용할 css를 정의합니다.</li>
+                <li>tv: TV에서 사용할 css를 정의합니다.</li>
+                <li>handheld: 손에 들고 다니는 장치에서 사용할 css를 정의합니다.</li>
+                <li>projection: 프로젝트를 위한 css를 정의합니다.</li>
+            </ul>
+        </li><br>
+        <li>and: 앞과 뒤의 조건을 나타냅니다(생략가능) <br />
+            ex) @media screens and (조건문){실행문} <br>
+            ex) @media screens (min-width:400px) and (max-width:900px){실행문} <br>
+            ex) @media screens (max-width:900px){실행문}
+        </li>
+        <li>조건문 : 해당 조건을 설정할 수 있습니다.</li>
+        <li>@media: 미디어쿼리가 시작됨을 표시합니다.</li>
+    </ul>
+
+
+
+</body>
+
+</html>

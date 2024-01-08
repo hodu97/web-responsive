@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Hana2.0 B';
+    src: url('Hana2-B.eot');
+    src: url('Hana2-B.eot?#iefix') format('embedded-opentype'),
+        url('Hana2-B.woff2') format('woff2'),
+        url('Hana2-B.woff') format('woff'),
+        url('Hana2-B.ttf') format('truetype'),
+        url('Hana2-B.svg#Hana2-B') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
