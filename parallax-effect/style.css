@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,10 +16,26 @@
 body {
     background: var(--second-color);
 }
-
-.char {
-    display: inline-block;
+section {
+	padding-top: 150px;
+	padding-bottom: 50px;
 }
+
+.wrapp {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.content {
+	width: 100%;
+	padding: 0 70px;
+}
+.char {
+  display: inline-block;
+}
+
 
 /* -------------------------------header----------------------------- */
 
@@ -174,3 +191,125 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
+
+
+/* -------------------------------benefits-------------------------------- */
+.benefits__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+   width: 100%;
+   height: auto;
+}
+
+.benefits__item {
+   list-style: none;
+   width: calc(33.33% - 27px);
+}
+
+.benefits__num {
+   display: inline-block;
+   font-size: 60px;
+   color: transparent;
+   -webkit-text-stroke: 1px var(--pr-color);
+}
+
+.benefits__p {
+   font-size: 20px;
+   color: #4b4b4b;
+}
+
+/* -------------------------------work-------------------------------- */
+
+/* work ********/
+.work {
+    padding-top: 150px;
+ }
+ 
+ .work__wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 120px;
+    justify-content: space-between;
+    padding: 0 120px;
+ }
+ 
+ .work__item {
+    position: relative;
+    width: calc(50% - 60px);
+    height: 100vh;
+ }
+ 
+ .work__item-num {
+    position: absolute;
+    display: inline-block;
+    font-size: 70px;
+    color: var(--pr-color);
+    mix-blend-mode: difference;
+    z-index: 2;
+ }
+ 
+ .work__item-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ }
+ 
+ .work__item-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+
+/* -------------------------------serv-------------------------------- */
+.serv__item {
+    position: relative;
+    padding: 40px 0;
+    border-bottom: 1px solid #2f2e2e;
+ }
+ 
+ .serv__item-arrow {
+    position: absolute;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+ }
+ 
+ .serv__item-arrow img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(180deg);
+ }
+ 
+ .serv__item-txt {
+    font-size: 50px;
+    color: #4b4b4b;
+    text-transform: uppercase;
+ }
+ 
+/* -------------------------------footer-------------------------------- */
+ .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ 
+ .footer__div {
+    font-size: 70px;
+    letter-spacing: 15px;
+    color: var(--pr-color);
+    text-transform: uppercase;
+ }
+ 
+ .footer__div span {
+    display: inline-block;
+ }
